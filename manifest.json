@@ -1,0 +1,17 @@
+{
+  "manifest_version" : 2,
+    "name" : "Instagram tagger",
+    "version" : "12.6.5.0",
+
+    "page_action" : {
+
+    },
+
+    "content_scripts" : [
+    { 
+      "matches" : ["http://instagram.com/*"],
+      "js" : ["jquery.js","elm-runtime.js","build/Overlay.js","shim.js"]
+    } 
+  ]
+
+}
